@@ -1,56 +1,82 @@
-SmartCare - Patient Health Record System
-A comprehensive web-based application designed to efficiently manage patient records, medical histories, and healthcare data. Developed as part of an internship project at the Fuel Group of Institutions.
+# SmartCare – Patient Health Record System
 
-🚀 Features
-Patient Management: Add, update, view, and manage patient profiles and personal information.
+SmartCare is a web-based patient health record management application developed using Java, Spring Boot, Thymeleaf, and MySQL. It helps manage patient profiles and maintain their medical history in an organized way.
 
-Medical History Tracking: Maintain and review detailed medical records, diagnosis notes, and past treatments.
+Developed as part of an internship project at the Fuel Group of Institutions.
 
-RESTful APIs: Built with backend service endpoints to handle smooth data flow and communication.
+## Features
 
-Responsive UI: User-friendly interface designed for seamless navigation.
+- **Patient Management:** Add, view, update, and delete patient records.
+- **Medical History Tracking:** Maintain patient medical history, problems, and treatments.
+- **RESTful APIs:** Backend endpoints for patient record management.
+- **Database Integration:** Store and retrieve data using MySQL.
+- **Web Interface:** User-friendly pages built with Thymeleaf, HTML, and CSS.
 
-🛠️ Tech Stack
-Backend: Java, Spring Boot, Hibernate/JPA
+## Tech Stack
 
-Database: MySQL
+- **Language:** Java
+- **Backend:** Spring Boot, Spring Data JPA, Hibernate
+- **Frontend:** Thymeleaf, HTML5, CSS3, JavaScript
+- **Database:** MySQL
+- **Build Tool:** Maven
+- **IDE:** Eclipse
 
-Frontend / Templates: Thymeleaf, HTML5, CSS3, JavaScript
+## Prerequisites
 
-Build Tool: Maven
+Before running the project, make sure you have:
 
-IDE: Eclipse / Visual Studio Code
+- Java Development Kit (JDK)
+- MySQL Server
+- Maven, or the included Maven Wrapper
 
-⚙️ Getting Started
-To run this project locally on your machine, follow these steps:
+## Getting Started
 
-Prerequisites
-Java Development Kit (JDK) installed
+### 1. Clone the Repository
 
-MySQL Server configured
-
-Maven installed
-
-Installation & Running
-Clone the repository:
-
-Bash
+```bash
 git clone https://github.com/chepatil779/SmartCare-Patient-Health-Record-System.git
-Configure Database:
+cd SmartCare-Patient-Health-Record-System
+```
 
-Open src/main/resources/application.properties.
+### 2. Configure the Database
 
-Update your MySQL username and password.
+Create a MySQL database named `smartcare`.
 
-Run the Application:
+Configure the following environment variables before running the application:
 
-Open the project in your favorite IDE or terminal.
+- `DB_URL` – JDBC URL of your MySQL database
+- `DB_USERNAME` – MySQL username
+- `DB_PASSWORD` – MySQL password
+- `PORT` – Application port (optional; defaults to 8080)
 
-Run the main Spring Boot application class (SmartcareApplication.java).
+Do not commit database passwords or other secrets to GitHub.
 
-Access in Browser:
+### 3. Run the Application
 
-Plaintext
+Run the main Spring Boot application class, `SmartcareApplication.java`, from your IDE.
+
+Alternatively, from the project directory, use the Maven Wrapper if it is available:
+
+```bash
+./mvnw spring-boot:run
+```
+
+On Windows Command Prompt, use:
+
+```bat
+mvnw.cmd spring-boot:run
+```
+
+### 4. Access the Application
+
+Open your browser and visit:
+
 http://localhost:8080
-👩‍💻 Author
-Chetana Patil
+
+## Author
+
+**Chetana Patil**
+
+## Project Status
+
+Deployment in progress.
